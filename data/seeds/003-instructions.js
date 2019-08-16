@@ -4,7 +4,7 @@ exports.seed = function(knex) {
     .truncate()
     .then(function() {
       // Inserts seed entries
-      return knex("table_name").insert([
+      return knex("instructions").insert([
         { instruction: "chop" },
         { instruction: "mix" },
         { instruction: "bake" }
